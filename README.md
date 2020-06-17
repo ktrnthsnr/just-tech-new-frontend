@@ -1,5 +1,5 @@
-﻿# just-tech-news
-Just Tech News is a blog hosted in Heroku and the JawsDB add-on, showing through the Insomnia tool the API endpoints where users can post, upvote, and comment on links to news articles.
+﻿# Just Tech
+Just Tech is a news blog hosted in Heroku and the JawsDB add-on, showing through the Insomnia tool the API endpoints where users can post, upvote, and comment on links to news articles.
 
 ## GitHub URL
 https://github.com/ktrnthsnr/just-tech-new-frontend
