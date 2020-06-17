@@ -1,19 +1,25 @@
-//back-end
+// back-end
 const express = require('express');
-const routes = require('./routes');
+const routes = require('./controllers/');
+// -- updated folder name routes to controllers
+  // const routes = require('./routes');
 const sequelize = require('./config/connection');
 const app = express();
 const PORT = process.env.PORT || 3001;
 // front-end
 const path = require('path');
+const exphbs = require('express-handlebars');
+const hbs = exphbs.create({});
 
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 
 // back-end
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // front-end middleware
 app.use(express.static(path.join(__dirname, 'public')));
-    // validate http://localhost:3001/stylesheets/style.css 
+
 
 // turn on routes
 app.use(routes);
