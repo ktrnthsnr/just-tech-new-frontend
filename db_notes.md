@@ -33,11 +33,21 @@ by typing:     `mysql -u root -p`    in your command line, then add your MySQL p
 ## How to publish to Heroku
 - Get an account setup at the Heroku site
 - After pushing to your master GitHub repo, then run the following in the bash terminal
-- `heroku create <yourgithubname-blogname>`
+- `heroku create ktrnthsnr-just-tech-news-fe`
+- Verify created from bash terminal type
+- `git remote -v`
+- You should see the connections to both gitGitHub and Heroku, as follows
+
+    ---- $ git remote -v
+    ---- heroku  https://git.heroku.com/ktrnthsnr-just-tech-news-fe.git (fetch)
+    ---- heroku  https://git.heroku.com/ktrnthsnr-just-tech-news-fe.git (push)
+    ---- origin  https://github.com/ktrnthsnr/just-tech-new-frontend (fetch)
+    ---- origin  https://github.com/ktrnthsnr/just-tech-new-frontend (push)
+
 - In Heroku, under the new app, provision JawsDB, and update the Config with the key\value env variables. Then run in the bash terminal to push the latest version to Heroku 
 - `git push heroku master`
 - Goto the URL where Heroku published the content
-https://ktrnthsn-just-tech-news.herokuapp.com
+https://ktrnthsnr-just-tech-news-fe.herokuapp.com/ 
 - Walkthrough on how to deploy to Heroku from VSCode 
 https://drive.google.com/file/d/1TNf9OdHX92O0jyQCso5bBjieMaatqJej/view
 - For more info, see your Heroku Dashboard: 
