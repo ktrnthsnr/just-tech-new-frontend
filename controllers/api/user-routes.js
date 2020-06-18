@@ -132,8 +132,20 @@ router.post('/', (req, res) => {
         //     "email": "",
         //     "password": ""
         // }
-        
 
+// --- logout
+router.post('/logout', (req, res) => {
+    // User.findOne({
+    if (req.session.loggedIn) {
+      req.session.destroy(() => {
+        res.status(204).end();
+      });
+    }
+    else {
+      res.status(404).end();
+    }
+  });
+// });
 
 
 // ========================== PUT /api/users/1 -- update a user's info
