@@ -93,7 +93,7 @@ router.post('/', (req, res) => {
         // console.log(err);
         // res.status(500).json(err);
         // });
-    });
+});
 
 // route found at http://localhost:3001/api/users/login
     // expects {email: 'lernantino@gmail.com', password: 'password1234'}

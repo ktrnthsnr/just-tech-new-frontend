@@ -25,6 +25,7 @@ const { Post, User, Comment } = require('../models');
   
 // populate the template with sequelize data
 router.get('/', (req, res) => {
+    console.log(req.session);
 Post.findAll({
     attributes: [
     'id',
@@ -49,12 +50,12 @@ Post.findAll({
     ]
 })
     .then(dbPostData => {
-    // pass a single post object into the homepage template   
-    console.log(dbPostData[0]); 
-    // res.render('homepage', dbPostData[0]);
-    const posts = dbPostData.map(post => post.get({ plain: true }));
-    // res.render('homepage', dbPostData[0].get({ plain: true }));
-    res.render('homepage', { posts });
+      // pass a single post object into the homepage template
+      const posts = dbPostData.map(post => post.get({ plain: true }));
+      console.log(dbPostData[0]);
+      // res.render('homepage', dbPostData[0]);
+      // // res.render('homepage', dbPostData[0].get({ plain: true }));
+      res.render('homepage', { posts });
     })
     .catch(err => {
     console.log(err);
@@ -63,9 +64,20 @@ Post.findAll({
 });
 
 // login 
+
 router.get('/login', (req, res) => {
+    if (req.session.loggedIn) {
+      res.redirect('/');
+      return;
+    }
+  
     res.render('login');
   });
+
+// router.get('/login', (req, res) => {
+//     console.log(req.session);
+//     res.render('login');
+//   });
 
 module.exports = router;
 
