@@ -27,3 +27,10 @@ or seed via the seed_notes.sql
 
 3. Then create a new vote on a post by using PUT /api/posts/upvote and passing in the following data (see the route tables for sample data to add)
 
+
+
+Tests from your desktop
+============================
+http://localhost:3001/api/posts
+
+http://localhost:3001/
