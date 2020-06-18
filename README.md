@@ -70,7 +70,7 @@ https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
 
 
 ## Technology
-Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, npm, HTML, CSS, bcrypt, dotenv
+Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, ES6, npm, HTML, CSS, bcrypt, dotenv
 
 ## Contribution
 ktrnthsnr
