@@ -21,11 +21,24 @@ containing mysql copy from a prev assignment..
 by typing:     `mysql -u root -p`    in your command line, then add your MySQL password when prompted.
 
 - Check the database and tables were created by running in the MySQL command line,
-* mysql> `USE <insert>; show tables; describe Category; describe Product; describe Tag;describe ProductTag;`
+* mysql> `USE just_tech_news_db; show tables; describe comment; describe post; describe user;describe vote;`
 - You should see this result
 - ![showtables](./img/<insert>.jpg "Show tables")
 
-- Check the tables after seeding by running in the mysql command line,
-* mysql> `select * from department; select * from role; select * from employee;`
+- Check the tables after seeding by running in the mysql command line, sample tables
+* mysql> `select * from comment; select * from user; select * from post;select * from vote;`
 - You should see this result
 - ![selecttables](./img/<insert>.jpg "Select tables")
+
+## How to publish to Heroku
+- Get an account setup at the Heroku site
+- After pushing to your master GitHub repo, then run the following in the bash terminal
+- `heroku create <yourgithubname-blogname>`
+- In Heroku, under the new app, provision JawsDB, and update the Config with the key\value env variables. Then run in the bash terminal to push the latest version to Heroku 
+- `git push heroku master`
+- Goto the URL where Heroku published the content
+https://ktrnthsn-just-tech-news.herokuapp.com
+- Walkthrough on how to deploy to Heroku from VSCode 
+https://drive.google.com/file/d/1TNf9OdHX92O0jyQCso5bBjieMaatqJej/view
+- For more info, see your Heroku Dashboard: 
+https://dashboard.heroku.com/apps

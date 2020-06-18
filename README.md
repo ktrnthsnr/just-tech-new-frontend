@@ -4,6 +4,9 @@ Just Tech News is a blog hosted in Heroku and the JawsDB add-on, showing through
 ## GitHub URL
 https://github.com/ktrnthsnr/just-tech-new-frontend
 
+## Heroku
+https://ktrnthsn-just-tech-news.herokuapp.com
+
 ## Table of Contents
 * [Description](#description)
 * [Installations](#installations)
