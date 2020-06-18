@@ -5,7 +5,7 @@ Just Tech News is a blog hosted in Heroku and the JawsDB add-on, showing through
 https://github.com/ktrnthsnr/just-tech-new-frontend
 
 ## Heroku
-https://ktrnthsn-just-tech-news.herokuapp.com
+https://ktrnthsn-just-tech-news-frontend.herokuapp.com
 
 ## Table of Contents
 * [Description](#description)
@@ -46,7 +46,9 @@ https://ktrnthsn-just-tech-news.herokuapp.com
 - `npm install express-handlebars`
 
 ## Usage
-- Within the VSCode terminal, start MySQL
+- Heroku site 
+https://ktrnthsn-just-tech-news-frontend.herokuapp.com
+- For backend access after cloning locally, within the VSCode terminal, start MySQL
 -   $ `mysql -u root -p`
 - Enter your MySQL password when prompted
 - To create the database and run the schema script, enter in the MySQL2 command line,
@@ -67,7 +69,6 @@ https://drive.google.com/file/d/1KR7l8L7FI46ifa94_QorOl94-ma2Q5Ut/view
 ![Heroku GET](./img/heroku-justnews.jpg "Heroku GET")
 - Heroku sample URLs, walkthrough within Insomnia for GET, POST, PULL, DELETE API endpoints
 https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
-
 
 ## Technology
 Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, npm, HTML, CSS, bcrypt, dotenv
