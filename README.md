@@ -26,24 +26,27 @@ https://ktrnthsnr-just-tech-news-fe.herokuapp.com/
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
 - Install npm
 - $ `npm init -y` or $ `npm install`
-- Manaully update the package.json to  `"main": "server.js",` instead of index.js
-- Create a .gitignore file in the root and add `node_modules` to this file
-- If you need to re-add the dependencies, run $ `npm install`
-- Install Express, Sequelize and mysql2
-- $ `npm install express sequelize mysql2`
-- Install NPM package dotenv to manage sensitive data, info https://www.npmjs.com/package/dotenv
-- $ `npm install dotenv`
-- To install the database for this project, you'll need a Heroku account with the JawsDB add-on. When uploaded to Heroku, add the process.env variables within the Heroku dashboard. For local testing, you can create an .env file to store your credentials. More info in the Testing.md
-- For more info, https://elements.heroku.com/addons/jawsdb
-- To install mysql manually (if not already installed per above)
-- $ `npm install -g mysql`
-- $ `npm install mysql2 --save`
-- Install console.table to print MySQL in console
-- $ `npm install console.table --save`
-- Install bcrypt 
-- `npm install bcrypt`
-- Install Handlebars template engine
-- `npm install express-handlebars`
+- For individual installs
+    - Manaully update the package.json to  `"main": "server.js",` instead of index.js
+    - Create a .gitignore file in the root and add `node_modules` to this file
+    - If you need to re-add the dependencies, run $ `npm install`
+    - Install Express, Sequelize and mysql2
+    - $ `npm install express sequelize mysql2`
+    - Install NPM package dotenv to manage sensitive data, info https://www.npmjs.com/package/dotenv
+    - $ `npm install dotenv`
+    - To install the database for this project, you'll need a Heroku account with the JawsDB add-on. When uploaded to Heroku, add the process.env variables within the Heroku dashboard. For local testing, you can create an .env file to store your credentials. More info in the Testing.md
+    - For more info, https://elements.heroku.com/addons/jawsdb
+    - To install mysql manually (if not already installed per above)
+    - $ `npm install -g mysql`
+    - $ `npm install mysql2 --save`
+    - Install console.table to print MySQL in console
+    - $ `npm install console.table --save`
+    - Install bcrypt 
+    - `npm install bcrypt`
+    - Install Handlebars template engine
+    - `npm install express-handlebars`
+    - Install these npm libraries to add session control
+    - `npm i express-session connect-session-sequelize`
 
 ## Usage
 - Heroku site 
@@ -71,7 +74,7 @@ https://drive.google.com/file/d/1KR7l8L7FI46ifa94_QorOl94-ma2Q5Ut/view
 https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
 
 ## Technology
-Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, npm, HTML, CSS, bcrypt, dotenv
+Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, ES6, npm, HTML, CSS, bcrypt, dotenv
 
 ## Contribution
 ktrnthsnr

@@ -11,3 +11,4 @@ CREATE DATABASE just_tech_news_db;
 show databases;
 
 -- to exit the msql2 command line, type quit
+
