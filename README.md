@@ -47,6 +47,9 @@ https://ktrnthsn-just-tech-news.herokuapp.com
     - `npm install express-handlebars`
     - Install these npm libraries to add session control
     - `npm i express-session connect-session-sequelize`
+    - Install Jest to unit test helpers
+    - `npm i jest -D`
+    - Then update package.json to "test": "jest" 
 
 ## Usage
 - Within the VSCode terminal, start MySQL
