@@ -11,6 +11,7 @@ https://ktrnthsn-just-tech-news.herokuapp.com
 * [Description](#description)
 * [Installations](#installations)
 * [Usage](#usage)
+* [Testing](#testing)
 * [Technology](#technology)
 * [Contribution](#contribution)
 
@@ -64,7 +65,7 @@ https://ktrnthsn-just-tech-news.herokuapp.com
 - Validate the homepage after starting the server, locally 
 - `http://localhost:3001/`
 
-### Testing
+## Testing
 - Insomnia GET sample
 ![Insomnia GET sample](./img/getSamp.jpg "Insomnia GET sample")
 - Local site walkthrough of the GET, POST, PULL, DELETE API routes through Insomnia
@@ -73,10 +74,12 @@ https://drive.google.com/file/d/1KR7l8L7FI46ifa94_QorOl94-ma2Q5Ut/view
 ![Heroku GET](./img/heroku-justnews.jpg "Heroku GET")
 - Heroku sample URLs, walkthrough within Insomnia for GET, POST, PULL, DELETE API endpoints
 https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
+- For Jest testing, in the bash terminal type
+- `npm test`
 
 
 ## Technology
-Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, ES6, npm, HTML, CSS, bcrypt, dotenv
+Heroku JawsDB, MySQL, MySQL2, Express.js, Sequelize, Insomnia, Node.js, JavaScript, ES6, npm, HTML, CSS, bcrypt, dotenv, Jest
 
 ## Contribution
 ktrnthsnr
