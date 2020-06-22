@@ -76,7 +76,7 @@ https://drive.google.com/file/d/1KR7l8L7FI46ifa94_QorOl94-ma2Q5Ut/view
 ![Heroku GET](./img/heroku-justnews.jpg "Heroku GET")
 - Heroku sample URLs, walkthrough within Insomnia for GET, POST, PULL, DELETE API endpoints
 https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
-- For Jest testing, in the bash terminal type the following:
+- For Jest testing, in the bash terminal type the following
 - `npm test`
 
 ## Technology
