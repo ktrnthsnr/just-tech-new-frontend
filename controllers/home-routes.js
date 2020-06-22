@@ -1,29 +1,14 @@
 // front-end, all user-facing routes, ie. homepage and login page
 const router = require('express').Router();
 
-// populate the template with sequelize data
 const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 
-// router.get('/', (req, res) => {
-//   res.render('homepage');
-// });
 
-// router.get('/', (req, res) => {
-//     res.render('homepage', {
-//       id: 1,
-//       post_url: 'https://handlebarsjs.com/guide/',
-//       title: 'Handlebars Docs',
-//       created_at: new Date(),
-//       vote_count: 10,
-//       comments: [{}, {}],
-//       user: {
-//         username: 'test_user'
-//       }
-//     });
-//   });
   
-// populate the template with sequelize data
+// -------------------- populate the template with sequelize data 
+// -- GET ttp://localhost:3001/post ( validation URL within Insomnia )
+
 router.get('/', (req, res) => {
     console.log(req.session);
 Post.findAll({
@@ -55,7 +40,8 @@ Post.findAll({
       console.log(dbPostData[0]);
       // res.render('homepage', dbPostData[0]);
       // // res.render('homepage', dbPostData[0].get({ plain: true }));
-      res.render('homepage', { posts });
+      res.render('homepage', { posts,
+        loggedIn: req.session.loggedIn }); // added fpr login
     })
     .catch(err => {
     console.log(err);
@@ -63,8 +49,29 @@ Post.findAll({
     });
 });
 
-// login 
 
+// --------------------- previous - populate the template with sequelize data ------------------------ //
+    // router.get('/', (req, res) => {
+    //   res.render('homepage');
+    // });
+
+    // router.get('/', (req, res) => {
+    //     res.render('homepage', {
+    //       id: 1,
+    //       post_url: 'https://handlebarsjs.com/guide/',
+    //       title: 'Handlebars Docs',
+    //       created_at: new Date(),
+    //       vote_count: 10,
+    //       comments: [{}, {}],
+    //       user: {
+    //         username: 'test_user'
+    //       }
+    //     });
+    //   });
+
+
+// ----------------------------  login 
+//test  GET post http://localhost:3001/login
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
       res.redirect('/');
@@ -78,7 +85,8 @@ router.get('/login', (req, res) => {
 //     res.render('login');
 //   });
 
-// -- route to a single post
+// -------------------------- route to a single post
+// //test  GET post http://localhost:3001/post/1
 router.get('/post/:id', (req, res) => {
     Post.findOne({
       where: {
@@ -116,7 +124,10 @@ router.get('/post/:id', (req, res) => {
         const post = dbPostData.get({ plain: true });
   
         // pass data to template
-        res.render('single-post', { post });
+        res.render('single-post', { 
+          post,
+          loggedIn: req.session.loggedIn    // -- only show comments form when logged in
+        });
       })
       .catch(err => {
         console.log(err);
