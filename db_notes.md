@@ -37,7 +37,7 @@ by typing:     `mysql -u root -p`    in your command line, then add your MySQL p
 - In Heroku, under the new app, provision JawsDB, and update the Config with the key\value env variables. Then run in the bash terminal to push the latest version to Heroku 
 - `git push heroku master`
 - Goto the URL where Heroku published the content
-https://ktrnthsn-just-tech-news.herokuapp.com
+https://ktrnthsnr-just-tech-news-fe.herokuapp.com/
 - Walkthrough on how to deploy to Heroku from VSCode 
 https://drive.google.com/file/d/1TNf9OdHX92O0jyQCso5bBjieMaatqJej/view
 - For more info, see your Heroku Dashboard: 

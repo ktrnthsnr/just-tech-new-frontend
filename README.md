@@ -5,7 +5,7 @@ Just Tech News is a blog hosted in Heroku and the JawsDB add-on, showing through
 https://github.com/ktrnthsnr/just-tech-new-frontend
 
 ## Heroku
-https://ktrnthsn-just-tech-news.herokuapp.com
+https://ktrnthsnr-just-tech-news-fe.herokuapp.com/
 
 ## Table of Contents
 * [Description](#description)
@@ -70,7 +70,7 @@ https://ktrnthsn-just-tech-news.herokuapp.com
 ![Insomnia GET sample](./img/getSamp.jpg "Insomnia GET sample")
 - Local site walkthrough of the GET, POST, PULL, DELETE API routes through Insomnia
 https://drive.google.com/file/d/1KR7l8L7FI46ifa94_QorOl94-ma2Q5Ut/view
-- Heroku sample GET URL for single user https://ktrnthsn-just-tech-news.herokuapp.com/api/users/1
+- Heroku sample GET URL for single user https://ktrnthsnr-just-tech-news-fe.herokuapp.com/api/users/1
 ![Heroku GET](./img/heroku-justnews.jpg "Heroku GET")
 - Heroku sample URLs, walkthrough within Insomnia for GET, POST, PULL, DELETE API endpoints
 https://drive.google.com/file/d/1nr9taJsIYR6BMeG7Mw6yNCKMdY5inUOP/view
