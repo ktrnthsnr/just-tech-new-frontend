@@ -52,5 +52,31 @@ router.get('/', withAuth, (req, res) => {
   });
 
 
+//   // GET route for editing
+// // Sample route GET http://localhost:3001/dashboard/edit/1
+  router.get('/edit/:id', withAuth, (req, res) => {  
+    Post.findOne({
+        where: {
+          // use the ID from the session
+          user_id: req.session.user_id
+        },
+        attributes: [
+          'id',
+          'post_url',
+          'title',
+          'created_at',
+          [sequelize.literal('(SELECT COUNT(*) FROM vote WHERE post.id = vote.post_id)'), 'vote_count']
+        ]
+      })
+        .then(dbPostData => {
+          // serialize data before passing to template
+          const posts = dbPostData.map(post => post.get({ plain: true }));
+          res.render('edit-post', { posts, loggedIn: true });
+        })
+        .catch(err => {
+          console.log(err);
+          res.status(500).json(err);
+        });
+    });
 
 module.exports = router;
